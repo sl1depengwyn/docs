@@ -116,6 +116,10 @@ Note that this should always be enforced because as long as there is one DB tran
 | Explorer.Chain.Token | tokens | asc: :contract\_address\_hash |
 | Explorer.Chain.TokenTransfer | token\_transfers | \[asc: :transaction\_hash, asc: :log\_index\] |
 | Explorer.Chain.TransactionAction | transaction\_actions | \[asc: :hash, asc: :log\_index\] |
+| Explorer.Chain.OptimismOutputRoot | op\_output\_roots | \[asc: :l2\_output\_index\] |
+| Explorer.Chain.OptimismTxnBatch | op\_transaction\_batches | \[asc: :l2\_block\_number\] |
+| Explorer.Chain.OptimismWithdrawalEvent | op\_withdrawal\_events | \[asc: :withdrawal\_hash, asc: :l1\_event\_type\] |
+| Explorer.Chain.OptimismWithdrawal | op\_withdrawals | \[asc: :msg\_nonce\] |
 | Explorer.Chain.Address.TokenBalance | address\_token\_balances | \[asc: :address\_hash, asc: :token\_contract\_address\_hash, asc: :block\_number\] |
 | Explorer.Chain.Address.CurrentTokenBalance | address\_current\_token\_balances | \[asc: :address\_hash, asc: :token\_contract\_address\_hash\] |
 | Explorer.Chain.StakingPool | staking\_pools | :staking\_address\_hash |
